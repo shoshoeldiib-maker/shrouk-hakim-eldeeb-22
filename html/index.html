@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>رشدي على السريع | Roshdy Restaurant</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            🍔 رشدي على السريع
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">الرئيسية</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">المنيو</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">عن المطعم</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">تواصل معنا</a>
+                </li>
+            </ul>
+
+            <button class="btn btn-warning" data-bs-toggle="offcanvas"
+                data-bs-target="#cart">
+                <i class="bi bi-cart3"></i>
+                السلة <span id="cart-count">0</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container text-center">
+        <h1>رشدي على السريع</h1>
+        <h3>أحلى أكل.. وأسرع خدمة!</h3>
+        <p>اختار وجبتك واستمتع بأحلى طعم</p>
+
+        <a href="#menu" class="btn btn-warning btn-lg mt-3">
+            اطلب الآن
+        </a>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="container py-5">
+    <div class="row text-center g-4">
+
+        <div class="col-md-4">
+            <i class="bi bi-truck feature-icon"></i>
+            <h5>خدمة سريعة</h5>
+            <p>خدمة مميزة وسريعة</p>
+        </div>
+
+        <div class="col-md-4">
+            <i class="bi bi-egg-fried feature-icon"></i>
+            <h5>جودة عالية</h5>
+            <p>أشهى المكونات والطعم المميز</p>
+        </div>
+
+        <div class="col-md-4">
+            <i class="bi bi-heart feature-icon"></i>
+            <h5>طعم تحبه</h5>
+            <p>وجبات تناسب كل الأذواق</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Menu Section -->
+<section class="container py-5" id="menu">
+
+    <h2 class="section-title text-center">منيو المطعم</h2>
+    <p class="text-center mb-4">اختار وجبتك المفضلة</p>
+
+    <!-- Categories -->
+    <div class="text-center mb-4">
+        <button class="btn btn-danger category-btn" data-category="all">الكل</button>
+        <button class="btn btn-outline-danger category-btn" data-category="burger">برجر</button>
+        <button class="btn btn-outline-danger category-btn" data-category="chicken">فراخ</button>
+        <button class="btn btn-outline-danger category-btn" data-category="sides">إضافات</button>
+    </div>
+
+    <div class="row g-4" id="products">
+
+        <!-- Product 1 -->
+        <div class="col-md-4 product" data-category="burger">
+            <div class="card food-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"
+                    class="card-img-top" alt="برجر">
+                <div class="card-body text-center">
+                    <h5>Classic Burger</h5>
+                    <p>برجر لذيذ بالجبنة والخضروات</p>
+                    <h5 class="price">120 جنيه</h5>
+                    <button class="btn btn-danger add-cart"
+                        data-id="1" data-name="Classic Burger" data-price="120">
+                        <i class="bi bi-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 product" data-category="burger">
+            <div class="card food-card h-100 shadow-sm">
+                <img src="../images/OIP%20(1).webp"
+     class="card-img-top"
+     alt=">
+                    class="card-img-top" alt="تشيز برجر">
+                <div class="card-body text-center">
+                    <h5>Cheese Burger</h5>
+                    <p>برجر بالجبنة والصوص الخاص</p>
+                    <h5 class="price">140 جنيه</h5>
+                    <button class="btn btn-danger add-cart"
+                        data-id="2" data-name="Cheese Burger" data-price="140">
+                        <i class="bi bi-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4 product" data-category="chicken">
+            <div class="card food-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600"
+                    class="card-img-top" alt="ساندوتش فراخ">
+                <div class="card-body text-center">
+                    <h5>Chicken Sandwich</h5>
+                    <p>ساندوتش فراخ بصوص مميز</p>
+                    <h5 class="price">90 جنيه</h5>
+                    <button class="btn btn-danger add-cart"
+                        data-id="3" data-name="Chicken Sandwich" data-price="90">
+                        <i class="bi bi-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-4 product" data-category="chicken">
+            <div class="card food-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600"
+                    class="card-img-top" alt="فراخ">
+                <div class="card-body text-center">
+                    <h5>Chicken Meal</h5>
+                    <p>وجبة فراخ مع البطاطس</p>
+                    <h5 class="price">160 جنيه</h5>
+                    <button class="btn btn-danger add-cart"
+                        data-id="4" data-name="Chicken Meal" data-price="160">
+                        <i class="bi bi-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-md-4 product" data-category="sides">
+            <div class="card food-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600"
+                    class="card-img-top" alt="بطاطس">
+                <div class="card-body text-center">
+                    <h5>French Fries</h5>
+                    <p>بطاطس مقلية مقرمشة</p>
+                    <h5 class="price">45 جنيه</h5>
+                    <button class="btn btn-danger add-cart"
+                        data-id="5" data-name="French Fries" data-price="45">
+                        <i class="bi bi-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-md-4 product" data-category="sides">
+            <div class="card food-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600"
+                    class="card-img-top" alt="مشروب">
+                <div class="card-body text-center">
+                    <h5>Cold Drink</h5>
+                    <p>مشروب بارد ومنعش</p>
+                    <h5 class="price">30 جنيه</h5>
+                    <button class="btn btn-danger add-cart"
+                        data-id="6" data-name="Cold Drink" data-price="30">
+                        <i class="bi bi-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+        </div>
+<!-- Product 7 -->
+<div class="col-md-4 product" data-category="burger">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" class="card-img-top" alt="Double Burger">
+        <div class="card-body text-center">
+            <h5>Double Burger</h5>
+            <p>برجر دبل بالجبنة والصوص</p>
+            <h5 class="price">180 جنيه</h5>
+            <button class="btn btn-danger add-cart" data-id="7" data-name="Double Burger" data-price="180">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product 8 -->
+<div class="col-md-4 product" data-category="chicken">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600" class="card-img-top" alt="Crispy Chicken">
+        <div class="card-body text-center">
+            <h5>Crispy Chicken</h5>
+            <p>فراخ كرسبي مقرمشة</p>
+            <h5 class="price">130 جنيه</h5>
+            <button class="btn btn-danger add-cart" data-id="8" data-name="Crispy Chicken" data-price="130">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product 9 -->
+<div class="col-md-4 product" data-category="sides">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600" class="card-img-top" alt="Loaded Fries">
+        <div class="card-body text-center">
+            <h5>Loaded Fries</h5>
+            <p>بطاطس بالجبنة والصوص</p>
+            <h5 class="price">75 جنيه</h5>
+            <button class="btn btn-danger add-cart" data-id="9" data-name="Loaded Fries" data-price="75">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product 10 -->
+<div class="col-md-4 product" data-category="chicken">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600" class="card-img-top" alt="Spicy Chicken">
+        <div class="card-body text-center">
+            <h5>Spicy Chicken</h5>
+            <p>وجبة فراخ حارة</p>
+            <h5 class="price">170 جنيه</h5>
+            <button class="btn btn-danger add-cart" data-id="10" data-name="Spicy Chicken" data-price="170">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product 11 -->
+<div class="col-md-4 product" data-category="sides">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600" class="card-img-top" alt="Onion Rings">
+        <div class="card-body text-center">
+            <h5>Onion Rings</h5>
+            <p>حلقات بصل مقرمشة</p>
+            <h5 class="price">60 جنيه</h5>
+            <button class="btn btn-danger add-cart" data-id="11" data-name="Onion Rings" data-price="60">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product 12 -->
+<div class="col-md-4 product" data-category="sides">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600" class="card-img-top" alt="Fresh Drink">
+        <div class="card-body text-center">
+            <h5>Fresh Drink</h5>
+            <p>مشروب بارد ومنعش</p>
+            <h5 class="price">40 جنيه</h5>
+            <button class="btn btn-danger add-cart" data-id="12" data-name="Fresh Drink" data-price="40">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Product 13 -->
+<div class="col-md-4 product" data-category="sides">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=600"
+             class="card-img-top" alt="Mango Juice">
+        <div class="card-body text-center">
+            <h5>Mango Juice 🥭</h5>
+            <p>عصير مانجو فريش</p>
+            <h5 class="price">50 جنيه</h5>
+            <button class="btn btn-danger add-cart"
+                data-id="13" data-name="Mango Juice" data-price="50">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product 14 -->
+<div class="col-md-4 product" data-category="sides">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=600"
+             class="card-img-top" alt="Orange Juice">
+        <div class="card-body text-center">
+            <h5>Orange Juice 🍊</h5>
+            <p>عصير برتقال طبيعي</p>
+            <h5 class="price">40 جنيه</h5>
+            <button class="btn btn-danger add-cart"
+                data-id="14" data-name="Orange Juice" data-price="40">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product 15 -->
+<div class="col-md-4 product" data-category="sides">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=600"
+             class="card-img-top" alt="Strawberry Juice">
+        <div class="card-body text-center">
+            <h5>Strawberry Juice 🍓</h5>
+            <p>عصير فراولة منعش</p>
+            <h5 class="price">45 جنيه</h5>
+            <button class="btn btn-danger add-cart"
+                data-id="15" data-name="Strawberry Juice" data-price="45">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product 16 -->
+<div class="col-md-4 product" data-category="sides">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600"
+             class="card-img-top" alt="Iced Coffee">
+        <div class="card-body text-center">
+            <h5>Iced Coffee ☕</h5>
+            <p>قهوة مثلجة لذيذة</p>
+            <h5 class="price">60 جنيه</h5>
+            <button class="btn btn-danger add-cart"
+                data-id="16" data-name="Iced Coffee" data-price="60">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Product 18 -->
+<div class="col-md-4 product" data-category="sides">
+    <div class="card food-card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600"
+             class="card-img-top" alt="Chocolate Milkshake">
+        <div class="card-body text-center">
+            <h5>Chocolate Milkshake 🍫</h5>
+            <p>ميلك شيك شوكولاتة</p>
+            <h5 class="price">65 جنيه</h5>
+            <button class="btn btn-danger add-cart"
+                data-id="18" data-name="Chocolate Milkshake" data-price="65">
+                أضف للسلة
+            </button>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+</section>
+
+<!-- About -->
+<section class="about py-5" id="about">
+    <div class="container text-center">
+        <h2>عن رشدي على السريع</h2>
+        <p>
+            بنقدم لكم مجموعة متنوعة من الوجبات والسندوتشات
+            بطعم مميز وجودة نهتم بيها في كل طلب.
+        </p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="container py-5" id="contact">
+    <h2 class="section-title text-center">تواصل معنا</h2>
+
+    <form class="col-md-7 mx-auto">
+        <input type="text" class="form-control mb-3"
+            placeholder="الاسم" required>
+
+        <input type="email" class="form-control mb-3"
+            placeholder="البريد الإلكتروني" required>
+
+        <textarea class="form-control mb-3" rows="4"
+            placeholder="اكتب رسالتك" required></textarea>
+
+        <button type="submit" class="btn btn-danger w-100">
+            إرسال
+        </button>
+    </form>
+</section>
+
+<!-- Shopping Cart -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="cart">
+
+    <div class="offcanvas-header">
+        <h5>🛒 سلة المشتريات</h5>
+        <button type="button" class="btn-close"
+            data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div id="cart-items">
+            <p class="text-center text-muted">السلة فارغة</p>
+        </div>
+
+        <hr>
+
+        <h5>الإجمالي:
+            <span id="total">0</span> جنيه
+        </h5>
+
+        <button class="btn btn-danger w-100 mt-3"
+            id="checkout">
+            إتمام الطلب
+        </button>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+    <h5>🍔 رشدي على السريع</h5>
+    <p>جميع الحقوق محفوظة © 2026</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

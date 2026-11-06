@@ -1,0 +1,305 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #fffaf4;
+    color: #29201d;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #7b1010, #c62828, #ed6c20);
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    font-size: 23px;
+    transition: 0.4s;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.08);
+    color: #ffd166 !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffd166 !important;
+    transform: translateY(-3px);
+}
+
+/* Hero */
+.hero {
+    background:
+    linear-gradient(rgba(40,0,0,0.72), rgba(40,0,0,0.72)),
+    url("https://images.unsplash.com/photo-1550547660-d9450f859349?w=1600");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 70px 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: 900;
+    color: #ffd166;
+    animation: fadeDown 1s ease;
+}
+
+.hero h3 {
+    font-size: 30px;
+    margin: 20px 0;
+    animation: fadeUp 1.2s ease;
+}
+
+.hero p {
+    font-size: 19px;
+    animation: fadeUp 1.5s ease;
+}
+
+.hero .btn {
+    border: none;
+    border-radius: 30px;
+    padding: 13px 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.hero .btn:hover {
+    background: #e85d04;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255,150,0,0.4);
+}
+
+/* Features */
+.feature-icon {
+    font-size: 48px;
+    color: #d62828;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.feature-icon:hover {
+    color: #f77f00;
+    transform: rotate(12deg) scale(1.2);
+}
+
+.container h5 {
+    font-weight: bold;
+}
+
+section.container .row > div {
+    transition: 0.4s;
+}
+
+/* Section Titles */
+.section-title {
+    color: #9d1717;
+    font-size: 35px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 4px;
+    background: #f77f00;
+    margin: 12px auto;
+    border-radius: 10px;
+}
+
+/* Category Buttons */
+.category-btn {
+    border-radius: 25px;
+    padding: 9px 25px;
+    margin: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.category-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+/* Food Cards */
+.food-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background: white;
+    transition: all 0.4s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(160,30,30,0.2) !important;
+}
+
+.food-card img {
+    height: 230px;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+.food-card:hover img {
+    transform: scale(1.08);
+}
+
+.food-card .card-body {
+    padding: 22px;
+}
+
+.food-card h5 {
+    color: #8b1717;
+}
+
+.food-card p {
+    color: #777;
+}
+
+.price {
+    color: #e85d04 !important;
+    font-size: 23px;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.btn-danger {
+    background: linear-gradient(45deg, #a4161a, #e63946);
+    border: none;
+    border-radius: 25px;
+    padding: 9px 20px;
+    transition: 0.3s;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(45deg, #e85d04, #ff9f1c);
+    transform: scale(1.06);
+    box-shadow: 0 5px 15px rgba(230,57,70,0.3);
+}
+
+/* About */
+.about {
+    background: linear-gradient(120deg, #7b1010, #bd2828, #e85d04);
+    color: white;
+}
+
+.about h2 {
+    color: #ffd166;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 19px;
+    line-height: 2;
+}
+
+/* Contact */
+form .form-control {
+    border: 2px solid #f0d4c5;
+    border-radius: 12px;
+    padding: 13px;
+    transition: 0.3s;
+}
+
+form .form-control:focus {
+    border-color: #e85d04;
+    box-shadow: 0 0 10px rgba(232,93,4,0.2);
+}
+
+/* Cart */
+.offcanvas {
+    background: #fffaf4;
+}
+
+.offcanvas-header {
+    background: linear-gradient(90deg, #8b1717, #e85d04);
+    color: white;
+}
+
+#total {
+    color: #d62828;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #300b0b;
+    color: white;
+    border-top: 4px solid #f77f00;
+}
+
+footer h5 {
+    color: #ffd166;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h3 {
+        font-size: 23px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .food-card img {
+        height: 210px;
+    }
+}
+
+
